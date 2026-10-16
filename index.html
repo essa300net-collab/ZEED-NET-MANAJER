@@ -2,124 +2,83 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#168447">
 <title>زيد للشبكات | ZEED NET Manager</title>
 <style>
-:root{--green:#168447;--green2:#e7f5ec;--black:#151a18;--red:#d62828;--bg:#f4f7f5;--white:#fff;--muted:#68736d;--border:#e0e7e2}
-*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--black)}
-header{background:var(--black);color:#fff;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:5px solid var(--green)}
-.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:14px;background:var(--green);display:grid;place-items:center;font-size:24px;font-weight:bold}.brand h1{font-size:21px;margin:0}.brand p{margin:5px 0 0;color:#cbd5ce;font-size:12px}
-.badge{border:1px solid #45514a;border-radius:999px;padding:8px 12px;font-size:12px;color:#dce8df}
-.layout{display:grid;grid-template-columns:220px 1fr;min-height:calc(100vh - 90px)}
-aside{background:#202622;color:#fff;padding:16px 12px}.navbtn{display:block;width:100%;border:0;text-align:right;background:transparent;color:#dce4de;padding:13px 12px;margin:4px 0;border-radius:10px;font-size:14px;cursor:pointer}.navbtn.active,.navbtn:hover{background:var(--green);color:#fff}
-main{padding:24px;min-width:0}.pagehead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}.pagehead h2{margin:0;font-size:23px}.sub{color:var(--muted);font-size:13px;margin-top:7px}
-button,.btn{cursor:pointer;border:0;border-radius:9px;padding:10px 14px;font-family:inherit;font-weight:bold}.primary{background:var(--green);color:#fff}.danger{background:var(--red);color:#fff}.secondary{background:#e8eee9;color:var(--black)}
-.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:20px}.card{background:var(--white);border:1px solid var(--border);border-radius:15px;padding:18px;box-shadow:0 3px 12px #10201808}.metric{font-size:27px;font-weight:bold;margin:10px 0 5px}.label{font-size:13px;color:var(--muted)}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-left:5px;background:var(--green)}.dot.red{background:var(--red)}.dot.black{background:var(--black)}
-.panel{background:#fff;border:1px solid var(--border);border-radius:15px;padding:18px;margin-bottom:18px}.panel h3{margin:0 0 14px;font-size:17px}.actions{display:flex;gap:8px;flex-wrap:wrap}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.toolbar input,.toolbar select,input,select{font-family:inherit}.toolbar input{flex:1;min-width:180px}
-input,select{width:100%;padding:11px;border:1px solid #ccd7cf;border-radius:8px;background:#fff;font-size:14px;color:var(--black)}label{display:block;font-size:13px;margin-bottom:6px;color:#38433c}.formgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.field{margin-bottom:10px}
-table{width:100%;border-collapse:collapse;min-width:700px}th,td{padding:12px 10px;text-align:right;border-bottom:1px solid var(--border);font-size:13px}th{background:#f1f6f2;color:#455148}td small{color:var(--muted)}.tablewrap{overflow:auto}.status{display:inline-block;border-radius:999px;padding:5px 9px;font-size:11px;background:var(--green2);color:#17683a}.status.off{background:#ffebeb;color:#a51e1e}.status.pending{background:#fff4d9;color:#8b5c00}
-.notice{background:#fff7e8;border:1px solid #f2d69b;color:#684b11;padding:13px 15px;border-radius:10px;font-size:13px;line-height:1.8;margin-bottom:18px}
-.hidden{display:none!important}.empty{text-align:center;color:var(--muted);padding:24px}.footer{font-size:12px;color:var(--muted);text-align:center;padding:18px}
-@media(max-width:900px){.layout{grid-template-columns:1fr}aside{display:flex;overflow:auto;gap:5px;padding:8px}.navbtn{white-space:nowrap;width:auto;margin:0}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.formgrid{grid-template-columns:repeat(2,minmax(0,1fr))}main{padding:15px}}
-@media(max-width:520px){header{padding:14px}.brand h1{font-size:17px}.badge{display:none}.cards{gap:8px}.card{padding:13px}.metric{font-size:22px}.formgrid{grid-template-columns:1fr}.pagehead h2{font-size:20px}}
+:root{--g:#168447;--g2:#e8f5ed;--r:#d62828;--ink:#17201b;--muted:#68756d;--bg:#f3f6f4;--card:#fff;--line:#e0e8e2}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:10px;padding:11px 14px;font-weight:700}.top{background:#111a15;color:#fff;padding:18px 16px;border-bottom:4px solid var(--g)}.topin{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.brand{font-size:21px;font-weight:800}.brand small{display:block;color:#a9d9b9;font-size:12px;margin-top:5px}.pill{background:#203a2a;color:#c8f2d5;padding:7px 10px;border-radius:30px;font-size:12px}.wrap{max-width:1100px;margin:18px auto;padding:0 12px}.notice{background:#fff6e5;border:1px solid #f2d18c;border-radius:12px;padding:12px;margin-bottom:14px;font-size:13px;line-height:1.8}.nav{display:flex;gap:8px;overflow:auto;padding:4px 0 12px}.nav button{background:#fff;color:#314238;border:1px solid var(--line);white-space:nowrap}.nav button.active{background:var(--g);color:#fff;border-color:var(--g)}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}.stat,.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px;box-shadow:0 3px 12px #17201b08}.stat span{color:var(--muted);font-size:13px}.stat strong{display:block;font-size:24px;margin-top:8px}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:12px}.sectionhead h2{margin:0;font-size:19px}.primary{background:var(--g);color:white}.danger{background:#fff0f0;color:var(--r);border:1px solid #ffd4d4}.secondary{background:#eef2ef;color:#27342b}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:11px}.field label{font-size:13px;color:#46544a}.field input,.field select{width:100%;border:1px solid #cfdad2;border-radius:9px;padding:11px;background:#fff;color:#17201b}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:right;padding:11px 9px;border-bottom:1px solid var(--line);font-size:13px}th{color:#5d6b61;background:#f8faf8}td .mini{padding:6px 8px;font-size:12px;margin:2px}.badge{display:inline-block;padding:5px 8px;border-radius:20px;font-size:12px;background:#e9f7ed;color:#14743a}.badge.off{background:#fff0f0;color:#b21f1f}.badge.warn{background:#fff5df;color:#8b5d00}.muted{color:var(--muted);font-size:13px}.search{max-width:320px;width:100%;border:1px solid #cfdad2;border-radius:10px;padding:10px}.hidden{display:none!important}.amount{font-weight:800}.empty{text-align:center;color:var(--muted);padding:26px}.footer{text-align:center;color:var(--muted);font-size:12px;padding:22px 8px}.modalback{position:fixed;inset:0;background:#0008;display:flex;align-items:center;justify-content:center;padding:12px;z-index:10}.modal{background:#fff;border-radius:16px;padding:18px;width:min(600px,100%);max-height:92vh;overflow:auto}.modal h3{margin-top:0}.actions{display:flex;gap:8px;flex-wrap:wrap}.smallnote{font-size:12px;color:var(--muted);line-height:1.7}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.grid,.row{grid-template-columns:1fr}.topin{align-items:flex-start}.stat strong{font-size:21px}.wrap{margin-top:12px}}
 </style>
 </head>
 <body>
-<header>
-  <div class="brand"><div class="logo">ز</div><div><h1>زيد للشبكات</h1><p>ZEED NET Manager · نظام إدارة الشبكة</p></div></div>
-  <div class="badge">النسخة الأولية · بيانات تجريبية محلية</div>
-</header>
-<div class="layout">
-<aside>
-<button class="navbtn active" data-page="dashboard">🏠 لوحة التحكم</button>
-<button class="navbtn" data-page="subscribers">👥 المشتركين</button>
-<button class="navbtn" data-page="plans">📦 الباقات</button>
-<button class="navbtn" data-page="payments">💰 الدفعات</button>
-<button class="navbtn" data-page="settings">⚙️ الإعدادات والربط</button>
-</aside>
-<main>
+<header class="top"><div class="topin"><div class="brand">🟢 زيد للشبكات <small>ZEED NET Manager · النسخة التجريبية المطوّرة</small></div><span class="pill">إدارة المشتركين والدفعات</span></div></header>
+<main class="wrap">
+<div class="notice"><b>تنبيه:</b> هذه نسخة تجريبية تحفظ البيانات في المتصفح على هذا الجهاز فقط. لا تتصل براوتر MikroTik ولا تنفذ قطعاً أو تفعيلًا حقيقياً. لا تدخل بيانات حقيقية حساسة قبل تجهيز خادم آمن.</div>
+<nav class="nav" id="nav">
+<button class="active" data-page="dashboard">لوحة التحكم</button><button data-page="subscribers">المشتركون</button><button data-page="plans">الباقات</button><button data-page="payments">الدفعات</button>
+</nav>
 <section id="dashboard" class="page">
-<div class="pagehead"><div><h2>لوحة التحكم</h2><div class="sub">ملخص إدارة زيد للشبكات</div></div><button class="primary" onclick="showPage('subscribers');openForm()">＋ إضافة مشترك</button></div>
-<div class="notice"><b>تنبيه:</b> هذه نسخة واجهة أولية تعمل محلياً داخل المتصفح. لم يتم ربطها بعد براوتر MikroTik أو User Manager، ولا تنفذ الفصل أو التفعيل الحقيقي.</div>
-<div class="cards">
-<div class="card"><div class="label"><span class="dot"></span>إجمالي المشتركين</div><div class="metric" id="totalCount">0</div><div class="label">الحسابات المسجلة في هذه النسخة</div></div>
-<div class="card"><div class="label"><span class="dot"></span>اشتراكات فعالة</div><div class="metric" id="activeCount">0</div><div class="label">حسب حالة الحساب المسجلة</div></div>
-<div class="card"><div class="label"><span class="dot red"></span>اشتراكات منتهية/موقوفة</div><div class="metric" id="offCount">0</div><div class="label">تحتاج إلى مراجعة</div></div>
-<div class="card"><div class="label"><span class="dot black"></span>الدفعات المسجلة</div><div class="metric" id="paidTotal">$0</div><div class="label">مجموع الدفعات التجريبية</div></div>
+<div class="stats">
+<div class="stat"><span>إجمالي المشتركين</span><strong id="statTotal">0</strong></div>
+<div class="stat"><span>اشتراكات فعّالة</span><strong id="statActive">0</strong></div>
+<div class="stat"><span>اشتراكات منتهية</span><strong id="statExpired">0</strong></div>
+<div class="stat"><span>إجمالي الدفعات المسجلة</span><strong id="statMoney">0</strong></div>
 </div>
-<div class="panel"><h3>آخر المشتركين</h3><div class="tablewrap"><table><thead><tr><th>الاسم</th><th>اسم المستخدم</th><th>النوع</th><th>الباقة</th><th>الحالة</th></tr></thead><tbody id="recentRows"></tbody></table></div></div>
+<div class="panel"><div class="sectionhead"><h2>ملخص الشبكة</h2><button class="primary" onclick="openSubscriber()">＋ إضافة مشترك</button></div><p class="muted">يمكنك إضافة مشتركين تجريبيين، اختيار باقة، تسجيل دفعة، والبحث في القائمة.</p><div id="dashSummary"></div></div>
 </section>
-
 <section id="subscribers" class="page hidden">
-<div class="pagehead"><div><h2>إدارة المشتركين</h2><div class="sub">إضافة الحسابات ومراجعة الاشتراكات</div></div><button class="primary" onclick="openForm()">＋ مشترك جديد</button></div>
-<div class="panel hidden" id="subscriberFormPanel"><h3 id="formTitle">إضافة مشترك</h3>
-<form id="subscriberForm"><input type="hidden" id="editId">
-<div class="formgrid">
-<div class="field"><label>اسم المشترك *</label><input id="name" required placeholder="الاسم الكامل"></div>
-<div class="field"><label>رقم الهاتف</label><input id="phone" placeholder="09xxxxxxxx"></div>
-<div class="field"><label>اسم المستخدم *</label><input id="username" required placeholder="مثال: ahmad123"></div>
-<div class="field"><label>نوع الاشتراك *</label><select id="type"><option>PPPoE</option><option>Hotspot</option><option>اشتراك ثابت</option></select></div>
-<div class="field"><label>الباقة</label><select id="plan"></select></div>
-<div class="field"><label>السعر (دولار)</label><input id="price" type="number" min="0" step="0.01" value="10"></div>
-<div class="field"><label>مدة الاشتراك</label><select id="duration"><option value="1">يومي</option><option value="7">أسبوعي</option><option value="30" selected>شهري (30 يوماً)</option></select></div>
-<div class="field"><label>تاريخ البداية</label><input id="startDate" type="date"></div>
-<div class="field"><label>الحالة</label><select id="status"><option value="active">فعال</option><option value="off">موقوف</option><option value="pending">بانتظار الدفع</option></select></div>
-<div class="field"><label>عنوان IP (للاشتراك الثابت)</label><input id="ip" placeholder="192.168.1.10"></div>
-<div class="field"><label>عنوان MAC (اختياري)</label><input id="mac" placeholder="AA:BB:CC:DD:EE:FF"></div>
-</div><div class="actions"><button class="primary" type="submit">حفظ المشترك</button><button class="secondary" type="button" onclick="closeForm()">إلغاء</button></div></form></div>
-<div class="panel"><div class="toolbar"><input id="search" placeholder="ابحث بالاسم أو اسم المستخدم أو الهاتف..." oninput="renderSubscribers()"><select id="filterType" onchange="renderSubscribers()" style="max-width:190px"><option value="">كل أنواع الاشتراك</option><option>PPPoE</option><option>Hotspot</option><option>اشتراك ثابت</option></select></div>
-<div class="tablewrap"><table><thead><tr><th>الاسم</th><th>اسم المستخدم</th><th>النوع</th><th>الباقة</th><th>الانتهاء</th><th>الحالة</th><th>إجراءات</th></tr></thead><tbody id="subscriberRows"></tbody></table></div></div>
+<div class="panel"><div class="sectionhead"><h2>إدارة المشتركين</h2><button class="primary" onclick="openSubscriber()">＋ إضافة مشترك</button></div><input class="search" id="subSearch" placeholder="ابحث بالاسم أو اسم المستخدم أو الهاتف..." oninput="renderSubscribers()"><div class="tablewrap"><table><thead><tr><th>الاسم</th><th>اسم المستخدم</th><th>النوع</th><th>الباقة</th><th>انتهاء الاشتراك</th><th>الحالة</th><th>إجراءات</th></tr></thead><tbody id="subRows"></tbody></table></div></div>
 </section>
-
 <section id="plans" class="page hidden">
-<div class="pagehead"><div><h2>الباقات</h2><div class="sub">إدارة الأسعار ومدد الاشتراك</div></div></div>
-<div class="panel"><form id="planForm"><div class="formgrid"><div class="field"><label>اسم الباقة</label><input id="planName" required placeholder="مثلاً: 4 ميغابت"></div><div class="field"><label>السرعة (ميغابت)</label><input id="planSpeed" type="number" min="0.1" step="0.1" required></div><div class="field"><label>السعر الشهري (دولار)</label><input id="planPrice" type="number" min="0" step="0.01" required></div></div><button class="primary" type="submit">إضافة باقة</button></form></div>
-<div class="panel"><div class="tablewrap"><table><thead><tr><th>اسم الباقة</th><th>السرعة</th><th>السعر الشهري</th><th>إجراء</th></tr></thead><tbody id="planRows"></tbody></table></div></div>
+<div class="panel"><div class="sectionhead"><h2>الباقات</h2><button class="primary" onclick="openPlan()">＋ إضافة باقة</button></div><div class="tablewrap"><table><thead><tr><th>اسم الباقة</th><th>المدة</th><th>السعر</th><th>السرعة</th><th>إجراءات</th></tr></thead><tbody id="planRows"></tbody></table></div></div>
 </section>
-
 <section id="payments" class="page hidden">
-<div class="pagehead"><div><h2>الدفعات والصندوق</h2><div class="sub">تسجيل المقبوضات وربطها بالمشتركين</div></div></div>
-<div class="panel"><form id="paymentForm"><div class="formgrid"><div class="field"><label>المشترك</label><select id="paymentSubscriber" required></select></div><div class="field"><label>المبلغ (دولار)</label><input id="paymentAmount" type="number" min="0.01" step="0.01" required></div><div class="field"><label>تاريخ الدفع</label><input id="paymentDate" type="date" required></div><div class="field"><label>ملاحظات</label><input id="paymentNote" placeholder="شهر الاشتراك أو رقم الإيصال"></div></div><button class="primary" type="submit">تسجيل الدفعة</button></form></div>
-<div class="panel"><div class="tablewrap"><table><thead><tr><th>التاريخ</th><th>المشترك</th><th>المبلغ</th><th>ملاحظات</th></tr></thead><tbody id="paymentRows"></tbody></table></div></div>
+<div class="panel"><div class="sectionhead"><h2>الدفعات والصندوق</h2><button class="primary" onclick="openPayment()">＋ تسجيل دفعة</button></div><div class="tablewrap"><table><thead><tr><th>التاريخ</th><th>المشترك</th><th>المبلغ</th><th>طريقة الدفع</th><th>ملاحظات</th></tr></thead><tbody id="payRows"></tbody></table></div></div>
 </section>
-
-<section id="settings" class="page hidden">
-<div class="pagehead"><div><h2>الإعدادات والربط</h2><div class="sub">متطلبات تشغيل النسخة الفعلية</div></div></div>
-<div class="panel"><h3>حالة المشروع</h3>
-<p>الواجهة الأولية جاهزة للتجربة على هذا الجهاز. البيانات تحفظ في المتصفح الحالي فقط باستخدام التخزين المحلي، ولا تتم مزامنتها تلقائياً بين الهاتف والكمبيوتر.</p>
-<p><b>الراوتر المستهدف:</b> MikroTik RB1100AHx4 · RouterOS 6.48.4</p>
-<p><b>المصادقة الحالية:</b> User Manager لحسابات PPPoE وHotspot.</p>
-<p><b>الخطوة المطلوبة للنسخة الفعلية:</b> تجهيز خادم سحابي وقاعدة PostgreSQL وربط آمن عبر VPN، ثم اختبار API وUser Manager قبل السماح بتغيير حسابات المشتركين.</p>
-<div class="notice">لا تضع كلمة مرور الراوتر أو مفاتيح API في هذه الصفحة. لا تفتح منفذ API (8728) مباشرة على الإنترنت. الربط الفعلي يحتاج إعداداً على الخادم والراوتر واختباراً آمناً.</div>
-<button class="danger" onclick="resetDemo()">مسح بيانات النسخة المحلية</button>
-</div>
-</section>
-<div class="footer">زيد للشبكات · ZEED NET Manager · نسخة أولية للتجربة وليست متصلة بالراوتر بعد</div>
-</main></div>
+<div class="footer">ZEED NET Manager · نموذج تجريبي محلي · لا يوجد اتصال فعلي بالراوتر</div>
+</main>
+<div id="modalRoot"></div>
 <script>
-const KEY='zeed_net_demo_v1';
-let state=JSON.parse(localStorage.getItem(KEY)||'null')||{subscribers:[],plans:[{id:1,name:'باقة 2 ميغابت',speed:2,price:5},{id:2,name:'باقة 4 ميغابت',speed:4,price:10},{id:3,name:'باقة 8 ميغابت',speed:8,price:18}],payments:[]};
-function save(){localStorage.setItem(KEY,JSON.stringify(state));renderAll()}
+const KEY='zeed_net_manager_v2';
+const defaultPlans=[
+{id:1,name:'يومية',days:1,price:1000,speed:'حسب الإعداد'},
+{id:2,name:'أسبوعية',days:7,price:5000,speed:'حسب الإعداد'},
+{id:3,name:'شهرية',days:30,price:15000,speed:'حسب الإعداد'}
+];
+let db=load();
+function load(){try{let x=JSON.parse(localStorage.getItem(KEY));if(x&&Array.isArray(x.subscribers)&&Array.isArray(x.plans)&&Array.isArray(x.payments))return x}catch(e){}return{subscribers:[],plans:defaultPlans,payments:[]}}
+function save(){localStorage.setItem(KEY,JSON.stringify(db));renderAll()}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function showPage(id){document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===id));renderAll()}
-document.querySelectorAll('.navbtn').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
-function openForm(){document.getElementById('subscriberFormPanel').classList.remove('hidden');document.getElementById('subscriberForm').reset();document.getElementById('editId').value='';document.getElementById('formTitle').textContent='إضافة مشترك';document.getElementById('startDate').value=new Date().toISOString().slice(0,10);refreshSelects()}
-function closeForm(){document.getElementById('subscriberFormPanel').classList.add('hidden')}
-function refreshSelects(){let p=document.getElementById('plan');p.innerHTML=state.plans.map(x=>`<option value="${x.id}">${esc(x.name)}</option>`).join('');let s=document.getElementById('paymentSubscriber');s.innerHTML=state.subscribers.map(x=>`<option value="${x.id}">${esc(x.name)} (${esc(x.username)})</option>`).join('')}
-document.getElementById('subscriberForm').addEventListener('submit',e=>{e.preventDefault();let id=document.getElementById('editId').value;let planId=Number(document.getElementById('plan').value);let plan=state.plans.find(x=>x.id===planId);let start=document.getElementById('startDate').value||new Date().toISOString().slice(0,10);let d=new Date(start+'T12:00:00');d.setDate(d.getDate()+Number(document.getElementById('duration').value));let obj={id:id?Number(id):Date.now(),name:document.getElementById('name').value.trim(),phone:document.getElementById('phone').value.trim(),username:document.getElementById('username').value.trim(),type:document.getElementById('type').value,planId,planName:plan?.name||'غير محددة',price:Number(document.getElementById('price').value||plan?.price||0),duration:Number(document.getElementById('duration').value),startDate:start,endDate:d.toISOString().slice(0,10),status:document.getElementById('status').value,ip:document.getElementById('ip').value.trim(),mac:document.getElementById('mac').value.trim()};if(state.subscribers.some(x=>x.username.toLowerCase()===obj.username.toLowerCase()&&x.id!==obj.id)){alert('اسم المستخدم موجود مسبقاً');return}if(id)state.subscribers=state.subscribers.map(x=>x.id===obj.id?obj:x);else state.subscribers.unshift(obj);save();closeForm()});
-function editSub(id){let x=state.subscribers.find(y=>y.id===id);if(!x)return;openForm();document.getElementById('formTitle').textContent='تعديل بيانات المشترك';document.getElementById('editId').value=x.id;for(let k of ['name','phone','username','type','price','startDate','status','ip','mac'])document.getElementById(k).value=x[k]??'';document.getElementById('plan').value=x.planId;document.getElementById('duration').value=x.duration}
-function deleteSub(id){if(confirm('هل تريد حذف المشترك من بيانات هذه النسخة المحلية؟')){state.subscribers=state.subscribers.filter(x=>x.id!==id);save()}}
-function statusLabel(s){return s==='active'?'<span class="status">فعال</span>':s==='off'?'<span class="status off">موقوف</span>':'<span class="status pending">بانتظار الدفع</span>'}
-function renderSubscribers(){let q=(document.getElementById('search')?.value||'').toLowerCase(),t=document.getElementById('filterType')?.value||'';let rows=state.subscribers.filter(x=>(!t||x.type===t)&&[x.name,x.username,x.phone].some(v=>(v||'').toLowerCase().includes(q)));document.getElementById('subscriberRows').innerHTML=rows.map(x=>`<tr><td>${esc(x.name)}<br><small>${esc(x.phone)}</small></td><td>${esc(x.username)}</td><td>${esc(x.type)}</td><td>${esc(x.planName)}</td><td>${esc(x.endDate)}</td><td>${statusLabel(x.status)}</td><td><div class="actions"><button class="secondary" onclick="editSub(${x.id})">تعديل</button><button class="danger" onclick="deleteSub(${x.id})">حذف</button></div></td></tr>`).join('')||'<tr><td colspan="7" class="empty">لا توجد مشتركين مطابقين للبحث</td></tr>'}
-document.getElementById('planForm').addEventListener('submit',e=>{e.preventDefault();state.plans.push({id:Date.now(),name:document.getElementById('planName').value.trim(),speed:Number(document.getElementById('planSpeed').value),price:Number(document.getElementById('planPrice').value)});e.target.reset();save()});
-function renderPlans(){document.getElementById('planRows').innerHTML=state.plans.map(p=>`<tr><td>${esc(p.name)}</td><td>${p.speed} Mbps</td><td>$${Number(p.price).toFixed(2)}</td><td><button class="danger" onclick="deletePlan(${p.id})">حذف</button></td></tr>`).join('')||'<tr><td colspan="4" class="empty">لا توجد باقات</td></tr>'}
-function deletePlan(id){if(state.subscribers.some(s=>s.planId===id)){alert('لا يمكن حذف باقة مرتبطة بمشترك');return}if(confirm('حذف هذه الباقة؟')){state.plans=state.plans.filter(p=>p.id!==id);save()}}
-document.getElementById('paymentForm').addEventListener('submit',e=>{e.preventDefault();let s=state.subscribers.find(x=>x.id===Number(document.getElementById('paymentSubscriber').value));if(!s){alert('أضف مشتركاً أولاً');return}state.payments.unshift({id:Date.now(),subscriberId:s.id,name:s.name,amount:Number(document.getElementById('paymentAmount').value),date:document.getElementById('paymentDate').value,note:document.getElementById('paymentNote').value.trim()});e.target.reset();document.getElementById('paymentDate').value=new Date().toISOString().slice(0,10);save()});
-function renderPayments(){document.getElementById('paymentRows').innerHTML=state.payments.map(p=>`<tr><td>${esc(p.date)}</td><td>${esc(p.name)}</td><td>$${p.amount.toFixed(2)}</td><td>${esc(p.note)}</td></tr>`).join('')||'<tr><td colspan="4" class="empty">لا توجد دفعات مسجلة</td></tr>'}
-function renderDashboard(){document.getElementById('totalCount').textContent=state.subscribers.length;document.getElementById('activeCount').textContent=state.subscribers.filter(x=>x.status==='active').length;document.getElementById('offCount').textContent=state.subscribers.filter(x=>x.status!=='active').length;document.getElementById('paidTotal').textContent='$'+state.payments.reduce((a,p)=>a+p.amount,0).toFixed(2);document.getElementById('recentRows').innerHTML=state.subscribers.slice(0,6).map(x=>`<tr><td>${esc(x.name)}</td><td>${esc(x.username)}</td><td>${esc(x.type)}</td><td>${esc(x.planName)}</td><td>${statusLabel(x.status)}</td></tr>`).join('')||'<tr><td colspan="5" class="empty">أضف أول مشترك للبدء</td></tr>'}
-function renderAll(){refreshSelects();renderSubscribers();renderPlans();renderPayments();renderDashboard()}
-function resetDemo(){if(confirm('سيتم حذف كل بيانات النسخة المحلية من هذا المتصفح. هل أنت متأكد؟')){state={subscribers:[],plans:[{id:1,name:'باقة 2 ميغابت',speed:2,price:5},{id:2,name:'باقة 4 ميغابت',speed:4,price:10},{id:3,name:'باقة 8 ميغابت',speed:8,price:18}],payments:[]};save()}}
-document.getElementById('paymentDate').value=new Date().toISOString().slice(0,10);renderAll();
+function fmt(n){return Number(n||0).toLocaleString('en-US')}
+function datePlus(days){let d=new Date();d.setDate(d.getDate()+Number(days||0));return d.toISOString().slice(0,10)}
+function expired(s){return s.expires && s.expires < new Date().toISOString().slice(0,10)}
+function status(s){return s.status==='موقوف'?'موقوف':expired(s)?'منتهي':'فعال'}
+function badge(s){let st=status(s);return `<span class="badge ${st==='فعال'?'':st==='منتهي'?'warn':'off'}">${st}</span>`}
+document.querySelectorAll('#nav button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#nav button').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.page').forEach(p=>p.classList.toggle('hidden',p.id!==b.dataset.page));renderAll()}));
+function renderAll(){renderDashboard();renderSubscribers();renderPlans();renderPayments()}
+function renderDashboard(){document.getElementById('statTotal').textContent=db.subscribers.length;document.getElementById('statActive').textContent=db.subscribers.filter(s=>status(s)==='فعال').length;document.getElementById('statExpired').textContent=db.subscribers.filter(s=>status(s)==='منتهي').length;document.getElementById('statMoney').textContent=fmt(db.payments.reduce((a,p)=>a+Number(p.amount||0),0));document.getElementById('dashSummary').innerHTML=db.subscribers.length?`<p>آخر المشتركين المضافين:</p><ul>${db.subscribers.slice(-5).reverse().map(s=>`<li>${esc(s.name)} — ${esc(s.username)} — ${badge(s)}</li>`).join('')}</ul>`:'<div class="empty">لا يوجد مشتركين بعد. اضغط «إضافة مشترك» للبدء.</div>'}
+function renderSubscribers(){let q=(document.getElementById('subSearch')?.value||'').trim().toLowerCase();let arr=db.subscribers.filter(s=>[s.name,s.username,s.phone].some(v=>String(v||'').toLowerCase().includes(q)));document.getElementById('subRows').innerHTML=arr.length?arr.map(s=>`<tr><td>${esc(s.name)}</td><td>${esc(s.username)}</td><td>${esc(s.type)}</td><td>${esc(s.planName||'—')}</td><td>${esc(s.expires||'—')}</td><td>${badge(s)}</td><td><button class="secondary mini" onclick="renewSubscriber(${s.id})">تجديد</button><button class="secondary mini" onclick="editSubscriber(${s.id})">تعديل</button><button class="danger mini" onclick="deleteSubscriber(${s.id})">حذف</button></td></tr>`).join(''):'<tr><td colspan="7" class="empty">لا توجد نتائج.</td></tr>'}
+function renderPlans(){document.getElementById('planRows').innerHTML=db.plans.length?db.plans.map(p=>`<tr><td>${esc(p.name)}</td><td>${p.days} يوم</td><td>${fmt(p.price)}</td><td>${esc(p.speed||'—')}</td><td><button class="secondary mini" onclick="editPlan(${p.id})">تعديل</button><button class="danger mini" onclick="deletePlan(${p.id})">حذف</button></td></tr>`).join(''):'<tr><td colspan="5" class="empty">لا توجد باقات.</td></tr>'}
+function renderPayments(){document.getElementById('payRows').innerHTML=db.payments.length?db.payments.slice().reverse().map(p=>`<tr><td>${esc(p.date)}</td><td>${esc(p.subscriberName)}</td><td class="amount">${fmt(p.amount)}</td><td>${esc(p.method)}</td><td>${esc(p.note||'—')}</td></tr>`).join(''):'<tr><td colspan="5" class="empty">لا توجد دفعات مسجلة.</td></tr>'}
+function showModal(title,body,onSave,label='حفظ'){document.getElementById('modalRoot').innerHTML=`<div class="modalback" onclick="if(event.target===this)closeModal()"><div class="modal"><h3>${title}</h3>${body}<div class="actions"><button class="primary" id="modalSave">${label}</button><button class="secondary" onclick="closeModal()">إلغاء</button></div></div></div>`;document.getElementById('modalSave').onclick=onSave}
+function closeModal(){document.getElementById('modalRoot').innerHTML=''}
+function planOptions(selected){return db.plans.map(p=>`<option value="${p.id}" ${String(selected)===String(p.id)?'selected':''}>${esc(p.name)} (${p.days} يوم - ${fmt(p.price)})</option>`).join('')}
+function openSubscriber(s=null){let editing=!!s;showModal(editing?'تعديل بيانات المشترك':'إضافة مشترك جديد',`
+<div class="row"><div class="field"><label>اسم المشترك *</label><input id="fName" value="${esc(s?.name||'')}" placeholder="الاسم الكامل"></div><div class="field"><label>اسم المستخدم *</label><input id="fUser" value="${esc(s?.username||'')}" placeholder="مثال: ahmad123"></div></div>
+<div class="row"><div class="field"><label>رقم الهاتف</label><input id="fPhone" value="${esc(s?.phone||'')}" placeholder="اختياري"></div><div class="field"><label>نوع الاشتراك</label><select id="fType">${['PPPoE','Hotspot','اشتراك ثابت'].map(t=>`<option ${s?.type===t?'selected':''}>${t}</option>`).join('')}</select></div></div>
+<div class="field"><label>الباقة</label><select id="fPlan">${planOptions(s?.planId||db.plans[0]?.id)}</select></div>
+<div class="row"><div class="field"><label>تاريخ بدء الاشتراك</label><input id="fStart" type="date" value="${esc(s?.start||new Date().toISOString().slice(0,10))}"></div><div class="field"><label>تاريخ الانتهاء</label><input id="fExpires" type="date" value="${esc(s?.expires||'')}"></div></div>
+<div class="field"><label>الحالة الإدارية</label><select id="fStatus"><option ${s?.status!=='موقوف'?'selected':''}>فعال</option><option ${s?.status==='موقوف'?'selected':''}>موقوف</option></select></div>
+<div class="smallnote">التسجيل هنا إداري وتجريبي فقط، ولا ينشئ حساباً في MikroTik.</div>`,()=>{let name=document.getElementById('fName').value.trim(),username=document.getElementById('fUser').value.trim();if(!name||!username){alert('يرجى إدخال اسم المشترك واسم المستخدم');return}if(db.subscribers.some(x=>x.username.toLowerCase()===username.toLowerCase()&&x.id!==s?.id)){alert('اسم المستخدم موجود مسبقاً');return}let plan=db.plans.find(p=>p.id===Number(document.getElementById('fPlan').value));let obj={id:s?.id||Date.now(),name,username,phone:document.getElementById('fPhone').value.trim(),type:document.getElementById('fType').value,planId:plan?.id,planName:plan?.name||'',start:document.getElementById('fStart').value,expires:document.getElementById('fExpires').value||datePlus(plan?.days||30),status:document.getElementById('fStatus').value};if(s){db.subscribers=db.subscribers.map(x=>x.id===s.id?obj:x)}else{db.subscribers.push(obj)}closeModal();save()},editing?'حفظ التعديلات':'حفظ المشترك')}
+function editSubscriber(id){let s=db.subscribers.find(x=>x.id===id);if(s)openSubscriber(s)}
+function deleteSubscriber(id){let s=db.subscribers.find(x=>x.id===id);if(s&&confirm('حذف المشترك '+s.name+'؟')){db.subscribers=db.subscribers.filter(x=>x.id!==id);save()}}
+function renewSubscriber(id){let s=db.subscribers.find(x=>x.id===id);if(!s)return;let p=db.plans.find(x=>x.id===s.planId);showModal('تجديد الاشتراك',`<p>المشترك: <b>${esc(s.name)}</b></p><div class="field"><label>الباقة الجديدة</label><select id="renewPlan">${planOptions(s.planId)}</select></div><div class="field"><label>تاريخ الانتهاء الجديد</label><input id="renewDate" type="date" value="${datePlus(p?.days||30)}"></div>`,()=>{let plan=db.plans.find(x=>x.id===Number(document.getElementById('renewPlan').value));s.planId=plan?.id;s.planName=plan?.name||'';s.expires=document.getElementById('renewDate').value||datePlus(plan?.days||30);s.status='فعال';closeModal();save()},'تأكيد التجديد')}
+function openPlan(p=null){showModal(p?'تعديل باقة':'إضافة باقة',`<div class="field"><label>اسم الباقة *</label><input id="pName" value="${esc(p?.name||'')}" placeholder="مثال: شهرية 10 ميغا"></div><div class="row"><div class="field"><label>المدة بالأيام</label><input id="pDays" type="number" min="1" value="${p?.days||30}"></div><div class="field"><label>السعر</label><input id="pPrice" type="number" min="0" value="${p?.price||0}"></div></div><div class="field"><label>وصف السرعة</label><input id="pSpeed" value="${esc(p?.speed||'')}" placeholder="مثال: 4 Mbps"></div>`,()=>{let name=document.getElementById('pName').value.trim(),days=Number(document.getElementById('pDays').value),price=Number(document.getElementById('pPrice').value);if(!name||days<1||price<0){alert('تحقق من اسم الباقة والمدة والسعر');return}let obj={id:p?.id||Date.now(),name,days,price,speed:document.getElementById('pSpeed').value.trim()};if(p)db.plans=db.plans.map(x=>x.id===p.id?obj:x);else db.plans.push(obj);closeModal();save()},'حفظ الباقة')}
+function editPlan(id){let p=db.plans.find(x=>x.id===id);if(p)openPlan(p)}
+function deletePlan(id){if(db.subscribers.some(s=>s.planId===id)){alert('لا يمكن حذف باقة مرتبطة بمشترك. عدّل اشتراك المشترك أولاً.');return}if(confirm('حذف هذه الباقة؟')){db.plans=db.plans.filter(p=>p.id!==id);save()}}
+function openPayment(){if(!db.subscribers.length){alert('أضف مشتركاً أولاً قبل تسجيل الدفعة');return}showModal('تسجيل دفعة',`<div class="field"><label>المشترك</label><select id="paySub">${db.subscribers.map(s=>`<option value="${s.id}">${esc(s.name)} — ${esc(s.username)}</option>`).join('')}</select></div><div class="row"><div class="field"><label>المبلغ</label><input id="payAmount" type="number" min="1" placeholder="المبلغ المقبوض"></div><div class="field"><label>طريقة الدفع</label><select id="payMethod"><option>نقداً</option><option>تحويل</option><option>أخرى</option></select></div></div><div class="field"><label>التاريخ</label><input id="payDate" type="date" value="${new Date().toISOString().slice(0,10)}"></div><div class="field"><label>ملاحظات</label><input id="payNote" placeholder="اختياري"></div>`,()=>{let s=db.subscribers.find(x=>x.id===Number(document.getElementById('paySub').value)),amount=Number(document.getElementById('payAmount').value);if(!s||amount<=0){alert('اختر مشتركاً وأدخل مبلغاً صحيحاً');return}db.payments.push({id:Date.now(),subscriberId:s.id,subscriberName:s.name,amount,method:document.getElementById('payMethod').value,date:document.getElementById('payDate').value,note:document.getElementById('payNote').value.trim()});closeModal();save()},'حفظ الدفعة')}
+renderAll();
 </script>
 </body>
 </html>
